@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/nkv24/nginx-pipeline.git' // Change to your repo
+                git branch: 'main', url:  'https://github.com/nkv24/nginx-pipeline.git' // Change to your repo
             }
         }
 
