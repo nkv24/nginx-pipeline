@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     // Ensure your image name and tag match in deployment.yaml
-                    sh 'kubectl apply -f /k8s/nginx-deployment.yaml'
+                    sh 'kubectl apply -f /k8s/nginx-deployment.yaml --validate=false'
                 }
             }
         }
